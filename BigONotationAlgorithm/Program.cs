@@ -12,7 +12,11 @@ namespace BigONotationAlgorithm
 
             //logAllPairOfArrays();
 
-            O_n__.FactorialTimeMethod();
+            //O_n__.FactorialTimeMethod();
+
+            //logPairofStringArray();
+
+            sumPairofNumberArray();
         }
 
         //Challenge 1
@@ -99,6 +103,33 @@ namespace BigONotationAlgorithm
             //Big O (n^2)
 
 
+        }
+
+        public static void logPairofStringArray()
+        {
+            string[] arrayVal = { "a", "b", "c", "d", "e" };
+
+            for (int i = 0; i < arrayVal.Length; i++)
+            {
+                for (int j = 0; j < arrayVal.Length; j++)
+                {
+                    Console.WriteLine(arrayVal[i] + arrayVal[j]);
+                }
+            }
+        }
+
+
+        public static void sumPairofNumberArray()
+        {
+            int[] arrayNum = { 1, 2, 3, 4 };
+
+            foreach (int i in arrayNum)
+            {
+                foreach (int j in arrayNum)
+                {
+                    Console.WriteLine( i + j);
+                }
+            }
         }
 
     }

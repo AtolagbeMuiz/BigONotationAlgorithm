@@ -7,8 +7,10 @@ namespace ArrayComparisonAlgorithm
     {
         static void Main(string[] args)
         {
-           // CompareArrays();
-            CompareArrays2();
+            // CompareArrays();
+             CompareArrays2();
+
+            //compareArrays3();
         }
 
 
@@ -49,7 +51,7 @@ namespace ArrayComparisonAlgorithm
 
         public static bool CompareArrays2()
         {
-            int[] firstArray = { 1, 2, 3 }; //O(n)
+            int[] firstArray = { 1, 1, 3 }; //O(n)
             int[] secondArray = { 5, 3, 6 }; //O(n)
 
             //Thought Process 
@@ -68,7 +70,7 @@ namespace ArrayComparisonAlgorithm
 
             for (int i = 0; i < firstArray.Length; i++)
             {
-                if (!map.ContainsKey(firstArray[i]))
+                if (!map.ContainsKey(firstArray[i])) //this validates that duplicates keys are  not copied into the dictionary 
                 {
                     int item = firstArray[i];
                     //map[item] = true;
@@ -105,6 +107,43 @@ namespace ArrayComparisonAlgorithm
             //        map[item] = true;
             //    }
             //}
+        }
+
+        public static bool compareArrays3()
+        {
+            //Given two Arrays, Create a function that let user know (true/false)
+            //whether these 2 arrays contains any common items
+
+            //-->Thought Process
+            //--> write this code in the most efficient manner based on runtime complexity
+            //--> loop through the first array and copy this value into another data structure like a dictionary (key value pairs)
+            //--> with the array values being saved in a key value pair data structure; looking up any data will be easy using key
+            //--> then the value of each key can looked up based on the current item in the loop
+
+            int[] firstArray = { 1, 2, 3 }; //O(n)
+            int[] secondArray = { 5, 3, 6 }; //O(n)
+
+            Dictionary<int, bool> dict = new Dictionary<int, bool>();
+
+            foreach (var item in firstArray)
+            {
+                dict.Add(item, true);
+            }
+
+            for (int i = 0; i < secondArray.Length; i++)
+            {
+                var isContained = dict.ContainsKey(secondArray[i]);
+                if (isContained)
+                {
+                    bool value = false;
+                    var valuePair = dict.TryGetValue(secondArray[i], out value);
+                    if(valuePair)
+                    { Console.WriteLine("true"); return true;
+                    }
+                }
+            }
+            Console.WriteLine("false");
+            return false;
         }
     }
 }
