@@ -6,7 +6,8 @@ namespace ArrayManipulations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ArrayManipulation.AddManipulation();
+            //Console.WriteLine("Hello World!");
         }
     }
 }

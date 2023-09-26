@@ -8,8 +8,14 @@ namespace GoogleInterviewExcercise
         static void Main(string[] args)
         {
             searchforPairsInAnArrayThatGivesAGivenSum();
+
+            //searchforPairsInAnArrayThatGivesAGivenSum3();
         }
 
+        /// <summary>
+        /// This excercise involves writing a function that takes an array and search for a pair in the array 
+        /// that when added together gives a given sum
+        /// </summary>
         public static void searchforPairsInAnArrayThatGivesAGivenSum()
         {
             int[] numberArray = { 1, 2, 4, 4 };
@@ -52,6 +58,34 @@ namespace GoogleInterviewExcercise
             //    var item = numberArray[i];
             //    map.Add(item, true);
             //}
+        }
+
+        public static bool searchforPairsInAnArrayThatGivesAGivenSum3()
+        {
+            int[] numberArray = { 4, 4, 2, 1 };
+            const int sum = 8;
+
+            //-->though process
+            //--> loop through the array using nexted for to compare 2 pairs of element if it's a sum
+            //ensure the second loop starts from index 1 not 0
+
+            for (int i = 0; i < numberArray.Length; i++)
+            {
+                for (int j = 1; j < numberArray.Length; j++)
+                {
+                    var sumValue = numberArray[i] + numberArray[j];
+
+                    if(sumValue == sum)
+                    {
+                        Console.WriteLine("true");
+                        return true;
+                    }
+                    continue;
+
+                }
+            }
+            Console.WriteLine("false");
+            return false;
         }
     }
 }
