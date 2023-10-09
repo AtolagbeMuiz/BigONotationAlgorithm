@@ -56,7 +56,7 @@ namespace ArraysExcercise
 
 
 
-            //Rever Array
+            //Reverse Array
             NewArray arr = new NewArray();
 
             //sample array 
