@@ -34,10 +34,10 @@ namespace ArraysExcercise
             //Array.ReverseArrayItem();
 
 
-            //NewArray newarray = new NewArray(3);
-            //newarray.AddItemToList(2);
-            //newarray.AddItemToList(5);
-            //newarray.AddItemToList(6);
+            NewArray newarray = new NewArray(3);
+            newarray.AddItemToList(2);
+            newarray.AddItemToList(5);
+            newarray.AddItemToList(6);
             //newarray.AddItemToList(9);
             //newarray.AddItemToList(8);
 
@@ -57,16 +57,21 @@ namespace ArraysExcercise
 
 
             //Reverse Array
-            NewArray arr = new NewArray();
+            //NewArray arr = new NewArray();
 
-            //sample array 
-            dynamic[] items = {1,2,3};
+            ////sample array 
+            //dynamic[] items = {1,2,3};
 
-            var reservedArray = arr.ReverArrayItems(items);
-            foreach (var item in reservedArray)
-            {
-                Console.WriteLine(item);
-            }
+            //var reservedArray = arr.ReverArrayItems(items);
+            //foreach (var item in reservedArray)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            //-->Delete Item at Index
+            var returnedArray = newarray.delteItemAtIndex(1);
+
         }
     }
 }

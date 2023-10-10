@@ -74,5 +74,37 @@ namespace ArraysExcercise
             }
             return null;
         }
+
+        public dynamic delteItemAtIndex(int indexToDelete)
+        {
+            //--> take the index of the item to delete
+            //--> validate the index with the length if the array
+            //--> loop through the array from the index to the last item
+            //--> copy the next item to the index into the cuurent index
+            //--> decrement the length if the array so as to get rid of the last item that has been copied.
+
+            if (index > arrayItems.Length)
+            {
+                throw new ArgumentOutOfRangeException("Index was outside the bounds of the array");
+            }
+            else
+            {
+                //var arrayCount = 0;
+                dynamic[] newArray = new dynamic[arrayItems.Length-1];
+
+                //this shift the items in the array from the index
+                for (int i = indexToDelete; i < arrayItems.Length -1 ; i++)
+                {
+                    arrayItems[i] = arrayItems[i + 1];
+                }
+
+                //this copies the copied array into a new array so as to shrink the length of the new array
+                for (int i = 0; i < arrayItems.Length-1; i++)
+                {
+                    newArray[i]= arrayItems[i];
+                }
+                return newArray;
+            }
+        }
     }
 }
