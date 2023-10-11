@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayManipulations", "Array
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildArray", "BuildArray\BuildArray.csproj", "{B67EEEAA-F360-4AB5-BE8F-30E6C3C348A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayRotationAlgorithm", "ArrayRotationAlgorithm\ArrayRotationAlgorithm.csproj", "{5909A6BE-7097-4E15-BDAB-8411831BA16A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayRotationAlgorithm", "ArrayRotationAlgorithm\ArrayRotationAlgorithm.csproj", "{5909A6BE-7097-4E15-BDAB-8411831BA16A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frog_Jump_Algorithm", "Frog_Jump_Algorithm\Frog_Jump_Algorithm.csproj", "{A6A3DE68-8E84-4824-8379-CD44BEEFC855}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frog_Jump_Algorithm", "Frog_Jump_Algorithm\Frog_Jump_Algorithm.csproj", "{A6A3DE68-8E84-4824-8379-CD44BEEFC855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd_Occurency_In_Array", "Odd_Occurency_In_Array\Odd_Occurency_In_Array.csproj", "{019B901E-E68D-4AF4-A0CC-FF65D79AA2E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odd_Occurency_In_Array", "Odd_Occurency_In_Array\Odd_Occurency_In_Array.csproj", "{019B901E-E68D-4AF4-A0CC-FF65D79AA2E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsExcercise", "StringsExcercise\StringsExcercise.csproj", "{1EC3A87F-7C47-4A54-9553-0D3BF3A9FF76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{019B901E-E68D-4AF4-A0CC-FF65D79AA2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{019B901E-E68D-4AF4-A0CC-FF65D79AA2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{019B901E-E68D-4AF4-A0CC-FF65D79AA2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC3A87F-7C47-4A54-9553-0D3BF3A9FF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC3A87F-7C47-4A54-9553-0D3BF3A9FF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC3A87F-7C47-4A54-9553-0D3BF3A9FF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC3A87F-7C47-4A54-9553-0D3BF3A9FF76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

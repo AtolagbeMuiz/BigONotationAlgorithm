@@ -83,7 +83,7 @@ namespace ArraysExcercise
             //--> copy the next item to the index into the cuurent index
             //--> decrement the length if the array so as to get rid of the last item that has been copied.
 
-            if (index > arrayItems.Length)
+            if (index > arrayItems.Length|| index < arrayItems.Length)
             {
                 throw new ArgumentOutOfRangeException("Index was outside the bounds of the array");
             }
